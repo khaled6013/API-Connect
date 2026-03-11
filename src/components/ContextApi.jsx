@@ -6,7 +6,9 @@ const ContextApi = ({ children }) => {
     let [info, setInfo] = useState([])
     let getData = () => {
         axios.get("https://dummyjson.com/carts").then((res) => {
-            setInfo(res.data.carts)
+            
+            let allProducts = res.data.carts.flatMap(cart => cart.products)
+            setInfo(allProducts)
         })
     }
     useEffect(() => {

@@ -51,9 +51,9 @@ const CardList = () => {
                                 <Link to={`/details/${item.id}`}>
                                     <button
                                         className="px-4 py-2 rounded-lg font-medium
-    bg-linear-to-r from-blue-500 to-purple-600
-    transition duration-300
-    hover:scale-110 hover:shadow-lg"
+                                                    bg-linear-to-r from-blue-500 to-purple-600
+                                                    transition duration-300
+                                                    hover:scale-110 hover:shadow-lg cursor-pointer"
                                     >
                                         Buy Now
                                     </button>
